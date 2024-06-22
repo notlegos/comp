@@ -3,7 +3,7 @@
 */
 //% color=#EA5532 icon="\uf110" block="Connected" blockId="PlanetX_Connected" 
 //% groups='["LED", "Digital", "Analog", "IIC Port", "OLED", "8*16 Matrix", "7-Seg 4-Dig LED Nixietube"]'
-namespace PlanetX_Display {
+namespace Connected {
     ////////////////////////////////TM 1637/////////////////
     let TM1637_CMD1 = 0x40;
     let TM1637_CMD2 = 0xC0;
@@ -185,22 +185,7 @@ namespace PlanetX_Display {
         pins.i2cWriteBuffer(HT16K33_ADDRESS, matBuf);
     }
     ///////////////////////////////enum
-    export enum DigitalRJPin {
-        //% block="J1" 
-        J1,
-        //% block="J2"
-        J2,
-        //% block="J3"
-        J3,
-        //% block="J4"
-        J4
-    }
-    export enum AnalogRJPin {
-        //% block="J1"
-        J1,
-        //% block="J2"
-        J2
-    }
+
     export enum EmojiList {
         //% block="😆"
         Grinning_Squinting_Face,

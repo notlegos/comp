@@ -1,7 +1,7 @@
 /**
 * Functions to NeZha multifunctional expansion board by ELECFREAKS Co.,Ltd.
 */
-//% color=#ff0000  icon="\uf06d" block="Hub" blockId="NeZha"
+//% color=#ff0000  icon="\uf06d" block="Hub" blockId="Hub"
 namespace neZha {
     const neZha_address = 0x10
     /**
@@ -39,7 +39,7 @@ namespace neZha {
         _360
     }
     /**
-     * TODO: Set the speed of M1, M2, M3, M4 motor. 
+     * Purpose: Set the speed of M1, M2, M3, M4 motor. 
      * @param motor M1, M2, M3, M4 motor , eg: MotorList.M1
      * @param speed motor speed, eg: 100
      */
@@ -113,7 +113,7 @@ namespace neZha {
     }
 
     /*
-     * TODO: Stop one of the motors. 
+     * Purpose: Stop one of the motors. 
      * @param motor A motor in the MotorList , eg: MotorList.M1
      */
     //% weight=86
@@ -122,7 +122,7 @@ namespace neZha {
         setMotorSpeed(motor, 0)
     }
     /*
-     * TODO: Stop all motors, including M1, M2, M3, M4.
+     * Purpose: Stop all motors, including M1, M2, M3, M4.
      */
     //% weight=85
     //% blockId=stopAllMotor  block="Stop all motor"
@@ -134,7 +134,7 @@ namespace neZha {
     }
 
     /*
-     * TODO: Setting the angle of a servo motor. 
+     * Purpose: Setting the angle of a servo motor. 
      * @param servo A servo in the ServoList , eg: ServoList.S1
      * @param angle Angle of servo motor , eg: 90
      */
@@ -173,7 +173,7 @@ namespace neZha {
         pins.i2cWriteBuffer(neZha_address, iic_buffer);
     }
     /*
-     * TODO: Setting the speed of a servo motor. 
+     * Purpose: Setting the speed of a servo motor. 
      * @param servo A servo in the ServoList , eg: ServoList.S1
      * @param angle Angle of servo motor , eg: 100
      */

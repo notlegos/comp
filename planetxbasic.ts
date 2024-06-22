@@ -3,7 +3,7 @@
 */
 //% color=#00B1ED  icon="\uf005" block="Connected" blockId="PlanetX_Connected"
 //% groups='["Digital", "Analog", "IIC Port"]'
-namespace PlanetX_Basic {
+namespace Connected {
     /////////////////////////// BME280 
     let BME280_I2C_ADDR = 0x76
     let dig_T1 = getUInt16LE(0x88)
