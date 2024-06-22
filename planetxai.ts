@@ -1,9 +1,9 @@
 /**
- * This extension is designed to programme and drive the Smart AI Lens(二郎神)
+ * This extension is designed to program and drive the Smart AI Lens
  */
 //% color=#0031AF icon="\uf06e" 
 //% groups='["Basic", "Ball", "Face", "Card", "Color", "Tracking", "Learn"]'
-//% block="PlanetX_AI-Lens"
+//% block="PlanetX AI Lens"
 namespace PlanetX_AILens {
     const CameraAdd = 0X14;
     let DataBuff = pins.createBuffer(9);
@@ -291,7 +291,7 @@ namespace PlanetX_AILens {
         Learning_entry_10 = 89
     }
     /**
-    * TODO: Waiting for module initialize.
+    * Purpose: Waiting for module initialize.
     */
     //% block="Initialize AI-Lens"
     //% group="Basic" weight=100 subcategory=Vision
@@ -307,7 +307,7 @@ namespace PlanetX_AILens {
         }
     }
     /**
-    * TODO: Switch recognition objects.
+    * Purpose: Switch recognition objects.
     * @param fun Function list eg: FuncList.Face
     */
     //% block="Switch function as %fun"
@@ -323,7 +323,7 @@ namespace PlanetX_AILens {
     }
 
     /**
-    * TODO: Get the image in a frame
+    * Purpose: Get the image in a frame
     */
     //% block="Get one image from AI-Lens"
     //% group="Basic" weight=90 subcategory=Vision
@@ -334,7 +334,7 @@ namespace PlanetX_AILens {
     }
 
     /**
-    * TODO: Judge the image contains a ball
+    * Purpose: Judge the image contains a ball
     */
     //% block="Image contains ball(s)"
     //% group="Ball" weight=85 subcategory=Vision
@@ -367,7 +367,7 @@ namespace PlanetX_AILens {
         }
     }
     /**
-    * TODO: In the image get ball(s)' info
+    * Purpose: In the image get ball(s)' info
     */
     //% block="In the image get ball(s)' info: %status"
     //% status.fieldEditor="gridpicker"
@@ -403,7 +403,7 @@ namespace PlanetX_AILens {
 
 
     /**
-    * TODO: Judge whether there is a face in the picture
+    * Purpose: Judge whether there is a face in the picture
     */
     //% block="Image contains a face"
     //% group="Face" weight=75 subcategory=Vision
@@ -423,7 +423,7 @@ namespace PlanetX_AILens {
         }
     }
     /**
-    * TODO: Judge whether there is a face in the picture
+    * Purpose: Judge whether there is a face in the picture
     * @param status Facestatus, eg: Facestatus.X
     */
     //% block="In the image get face(s)' info: %status"
@@ -461,7 +461,7 @@ namespace PlanetX_AILens {
         }
     }
     /**
-    * TODO: Judge whether there is a digital card in the screen
+    * Purpose: Judge whether there is a digital card in the screen
     * @param status numberCards, eg: numberCards.1
     */
     //% block="Image contains number card(s): %status"
@@ -477,7 +477,7 @@ namespace PlanetX_AILens {
             return false
     }
     /**
-    * TODO: Judge whether there is a letter card in the screen
+    * Purpose: Judge whether there is a letter card in the screen
     * @param status letterCards, eg: letterCards.A
     */
     //% block="Image contains letter card(s): %status"
@@ -493,7 +493,7 @@ namespace PlanetX_AILens {
             return false
     }
     /**
-    * TODO: Judge whether there is a traffic card in the screen
+    * Purpose: Judge whether there is a traffic card in the screen
     * @param status trafficCards, eg: trafficCards.forward
     */
     //% block="Image contains traffic card(s): %status"
@@ -509,7 +509,7 @@ namespace PlanetX_AILens {
             return false
     }
     /**
-    * TODO: Judge whether there is a other card in the screen
+    * Purpose: Judge whether there is a other card in the screen
     * @param status otherCards, eg: otherCards.cat
     */
     //% block="Image contains other card(s): %status"
@@ -536,7 +536,7 @@ namespace PlanetX_AILens {
         }
     }
     /**
-    * TODO: Card parameters in the screen
+    * Purpose: Card parameters in the screen
     * @param status otherCards, eg: Cardstatus.X
     */
     //% block="In the image get Card(s)' info: %status"
@@ -570,7 +570,7 @@ namespace PlanetX_AILens {
             return 0
     }
     /**
-    * TODO: Judge whether there is a color in the screen
+    * Purpose: Judge whether there is a color in the screen
     * @param status ColorLs, eg: ColorLs.red
     */
     //% block="Image contains color card(s): %status"
@@ -597,7 +597,7 @@ namespace PlanetX_AILens {
         }
     }
     /**
-    * TODO: color parameters in the screen
+    * Purpose: color parameters in the screen
     * @param status Colorstatus, eg: Colorstatus.X
     */
     //% block="In the image get color card(s)' info: %status"
@@ -632,7 +632,7 @@ namespace PlanetX_AILens {
         }
     }
     /**
-    * TODO: line parameters in the screen
+    * Purpose: line parameters in the screen
     * @param status Linestatus, eg: Linestatus.angle
     */
     //% block="In the image get line(s)' info: %status"
@@ -661,7 +661,7 @@ namespace PlanetX_AILens {
             return 0
     }
     /**
-    * TODO: line parameters in the screen
+    * Purpose: line parameters in the screen
     * @param status Linestatus, eg: Linestatus.angle
     */
     //% block="Image contains line's direction towards %status"
@@ -710,7 +710,7 @@ namespace PlanetX_AILens {
     }
 
     /**
-    * TODO: Learn an object in a picture
+    * Purpose: Learn an object in a picture
     * @param thingsID Edit a label for the object, eg: 1
     */
     //% block="Learn an object with: %thingsID"
@@ -725,7 +725,7 @@ namespace PlanetX_AILens {
         pins.i2cWriteBuffer(CameraAdd, thingsBuf)
     }
     /**
-    * TODO: Clear Learned Objects
+    * Purpose: Clear Learned Objects
     */
     //% block="Clear learned objects"
     //% group="Learn" weight=15 subcategory=Vision
@@ -737,7 +737,7 @@ namespace PlanetX_AILens {
         pins.i2cWriteBuffer(CameraAdd, thingsBuf)
     }
     /**
-    * TODO: Judge whether there are any learned objects in the picture
+    * Purpose: Judge whether there are any learned objects in the picture
     */
     //% block="Image contains learned objects: %status"
     //% status.fieldEditor="gridpicker"
@@ -757,7 +757,7 @@ namespace PlanetX_AILens {
             return false
     }
     /**
-    * TODO: Judge whether there are any learned objects in the picture
+    * Purpose: Judge whether there are any learned objects in the picture
     */
     //% block="In the image get learn object %thingsID Confidence"
     //% group="Learn" weight=10 subcategory=Vision
