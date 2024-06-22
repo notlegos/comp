@@ -10,7 +10,11 @@
         "main.blocks",
         "main.ts",
         "README.md",
-        "displaySendBuffer.asm"
+        "displaySendBuffer.asm",
+        "display.ts",
+        "planetxiot.ts",
+        "planetxbasic.ts",
+        "nezha.ts"
     ],
     "testFiles": [
         "test.ts"
@@ -22,5 +26,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "blocksprj"
 }
