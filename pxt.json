@@ -14,7 +14,8 @@
         "display.ts",
         "planetxiot.ts",
         "planetxbasic.ts",
-        "nezha.ts"
+        "nezha.ts",
+        "planetxai.ts"
     ],
     "testFiles": [
         "test.ts"
