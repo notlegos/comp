@@ -3,7 +3,7 @@
  */
 //% color=#0031AF icon="\uf06e" 
 //% groups='["Basic", "Ball", "Face", "Card", "Color", "Tracking", "Learn"]'
-//% block="PlanetX AI Lens"
+//% block="AI Lens"
 namespace PlanetX_AILens {
     const CameraAdd = 0X14;
     let DataBuff = pins.createBuffer(9);

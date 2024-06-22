@@ -1,5 +1,5 @@
 //% color=#4ca630 icon="\uf1eb" 
-//% block="PlanetX IoT" blockId="PlanetX_IoT"
+//% block="IoT" blockId="PlanetX_IoT"
 namespace PlanetX_IOT {
     enum Cmd {
         None,
