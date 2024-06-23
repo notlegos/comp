@@ -15,7 +15,9 @@
         "planetxiot.ts",
         "planetxbasic.ts",
         "nezha.ts",
-        "planetxai.ts"
+        "planetxai.ts",
+        "background.ts",
+        "irreceiver.ts"
     ],
     "testFiles": [
         "test.ts"
